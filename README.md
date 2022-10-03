@@ -1,1 +1,2 @@
-# multimedia_systems
+# Multimediálne systémy
+Predmet, ktorý študujem
