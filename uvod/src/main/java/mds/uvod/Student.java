@@ -1,10 +1,11 @@
 package mds.uvod;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Student {
 
-    public static ArrayList<Student> students = new ArrayList<>();
+    public static List<Student> students = new ArrayList<>();
     private final String surname;
     private final String name;
     private final int id;
