@@ -13,11 +13,11 @@ import java.util.List;
 
 import static mds.project.FilePaths.DASH_DIRECTORY;
 
-public class VideoLibrary extends ArrayList<String> {
+public class StreamLibrary extends ArrayList<String> {
 
     private static String suffix = ".mpd";
 
-    public VideoLibrary() throws IOException {
+    public StreamLibrary() throws IOException {
 
         for(File file : discoverFiles(Path.of(DASH_DIRECTORY),suffix)){
             this.add(file.getParentFile().getName());
