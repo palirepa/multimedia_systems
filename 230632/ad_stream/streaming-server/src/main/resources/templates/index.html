@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form method="post" action="/dashplayer" style="background-color: #ffffff; padding: 15px; margin: 5px">
+      <h4>Adaptivní streaming</h4>
+      <label for="type1">Lokální MP4 video</label>
+      <input type="radio" id="type1" name="type" value="/byterange"><br>
+
+      <label for="type2">Video z URL</label>
+      <input type="radio" id="type2" name="type" value="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"><br>
+
+      <label for="type3">Dash stream z URL</label>
+      <input type="radio" id="type3" name="type" value="https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd"><br>
+
+      <label for="type4">Lokální Dash stream</label>
+      <input type="radio" id="type4" name="type" value="/dash/manifest.mpd"><br>
+
+      <label for="type5">Lokální HLS stream</label>
+      <input type="radio" id="type5" name="type" value="/hls/playlist.m3u8"><br>
+
+      <input id="submit2" type="submit" value="Zobrazit"/>
+</form>
+<div style="background-color: #ffffff; padding: 15px; margin: 5px">
+      <a href="/gallery" style="background-color: #ffffff; padding: 5px; margin: 5px; color: black; border-style: solid; border-width: 1px; border-radius: 5px;  text-decoration: none;">Gallery</a>
+</div>
+</body>
+</html>

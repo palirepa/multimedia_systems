@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+</head>
+<body>
+  <h1>Gallery</h1>
+  <p>Pavol Repa 230632</p>
+    <div class="galerie">
+        <div th:each="movie: ${library}">
+            <a th:href="@{'video/'+${movie.getFile_name()}}">
+                <img th:src=@{'images/'+${movie.getImage_name()}} width="400" height="250">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

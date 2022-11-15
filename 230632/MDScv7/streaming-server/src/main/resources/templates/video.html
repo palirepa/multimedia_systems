@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Video player</title>
+</head>
+<body>
+    <h2>Streaming Videa</h2>
+    <video width="75%" controls>
+        <source th:src="${'/getvideo/' + url}" type="video/mp4">
+    </video>
+</body>
+</html>

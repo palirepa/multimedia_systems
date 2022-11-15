@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Template</title>
+   <link rel="stylesheet" th:href="@{'/css/' + ${name} + '.css'}" type="text/css">
+    <!--<link rel="stylesheet" th:href="@{/css/alice.css}" type="text/css">
+   <link rel="stylesheet" th:href="@{/css/bob.css}" type="text/css">-->
+</head>
+<body>
+
+<h1 th:text="${name}"></h1>
+
+
+</body>
+</html>

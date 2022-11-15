@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Player</title>
+</head>
+<body>
+  <h2>Přehrávání MP4 streamu: Pavol Repa</h2>
+
+  <div th:if="${condition}">
+      <video th:width="${width}" height="400" controls th:muted="${muted}" th:autoplay="${autoplay}">
+          <source th:src="${url}" type="video/mp4" poster="https://raw.githubusercontent.com/ENeMy235/MDS/main/Screen1.jpg">
+      </video>
+  </div>
+  <div th:unless="${condition}">
+      <p>Není zadána URL!</p>
+  </div>
+</body>
+</html>
